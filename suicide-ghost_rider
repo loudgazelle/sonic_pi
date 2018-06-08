@@ -1,0 +1,35 @@
+# suicide's song "ghost rider"
+
+use_synth :blade
+with_fx :distortion, amp:1, distort:0.2 do
+  play :C2, sustain:3, decay: 8, vibrato_depth: 0, vibrato_rate:0
+  sleep 6
+  live_loop :bass do
+    play :F2, amp: 5, sustain:0.1, release:0.2
+    sleep 0.2
+    play :E2, amp: 5, sustain:0.2,release:0.2
+    sleep 0.15
+    play :C2, amp: 5, sustain:0.3,release:0.3
+    sleep 0.3
+  end
+  live_loop :guitar do
+    play :G5, sustain:0.2, release:0.02
+    play :B5, sustain:0.2, release:0.02
+    sleep 0.4
+    play :G5, sustain:0.2, release:0.01
+    play :B5, sustain:0.2, release:0.01
+    sleep 0.7
+    play :G5, sustain:0.2, release:0.02
+    play :B5, sustain:0.2, release:0.02
+    sleep 0.6
+    play :G5, sustain:0.15, release:0.01
+    play :B5, sustain:0.15, release:0.01
+    sleep 0.6
+    play :G5, sustain:0.1, release:0.01
+    play :B5, sustain:0.1, release:0.01
+    sleep 0.15
+    play :G5, sustain:0.2, release:0.02
+    play :B5, sustain:0.2, release:0.02
+    sleep 0.7
+  end
+end
